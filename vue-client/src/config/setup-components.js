@@ -10,6 +10,7 @@ import DataTable from '../components/DataTable.vue';
 import TimeLine from '../components/TimeLine.vue';
 import UserTreeView from '../components/UserTreeView.vue';
 import Stepper from '../components/Stepper.vue';
+import LetterList from '../components/LetterList.vue';
 
 import LocationStatistic from '../components/statistics/LocationStatistic.vue';
 import SiteViewStatistic from '../components/statistics/SiteViewStatistic.vue';
@@ -27,6 +28,7 @@ function setupComponents(Vue){
   Vue.component('time-line', TimeLine);
   Vue.component('user-tree-view', UserTreeView);
   Vue.component('stepper', Stepper);
+  Vue.component('letter-list', LetterList);
 
   Vue.component('location-statistic', LocationStatistic);
   Vue.component('site-view-statistic', SiteViewStatistic);

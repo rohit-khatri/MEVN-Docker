@@ -12,6 +12,8 @@ import Login from '../pages/core/Login.vue';
 import Error from '../pages/core/Error.vue';
 import Search from '../pages/Search.vue';
 import Eligibilities from '../pages/Eligibilities'
+import Letter from '../pages/Letter.vue'
+import Roster from '../pages/Roster'
 
 
 
@@ -133,6 +135,30 @@ export default new Router({
           { name: 'Home', href: 'Dashboard' },
           { name: 'Eligibilities' },
           { name: ' Search Eligibility' }
+        ]
+      }
+    },
+    {
+      path: '/roster',
+      name: 'Score Roster',
+      component: Roster,
+      meta: {
+        breadcrumb: [
+          { name: 'Home', href: 'Dashboard' },
+          { name: 'Score Roster' },
+          { name: ' Search Score Roster' }
+        ]
+      }
+    }
+    ,
+    {
+      path: '/list-letters',
+      name: 'List Letters',
+      component: Letter,
+      meta: {
+        breadcrumb: [
+          { name: 'Home', href: 'Dashboard' },
+          { name: 'Letter' }
         ]
       }
     }

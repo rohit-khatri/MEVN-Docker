@@ -1,6 +1,5 @@
 <template>
-<v-container >
-    <v-layout row wrap mb-0>
+    <v-layout row wrap mb-3>
       <v-flex xs12>
         <v-card class="header-links" color="grey lighten-4">
           <v-breadcrumbs :items="items" class="breadcrumbs" divider="/">
@@ -11,7 +10,6 @@
         </v-card>
   </v-flex>
     </v-layout>
-  </v-container>
 </template>
 
 <script>

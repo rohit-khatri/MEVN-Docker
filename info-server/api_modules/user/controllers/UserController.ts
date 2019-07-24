@@ -44,7 +44,6 @@ export default class UserController extends BaseController {
                         return res.status(403).json(this.filterResponse(false, 403, 'Please check your login details.', { errors: { name: 'AuthenticationError', message: "Invalid login credentials." } }));
                     }
                     this.tokens = middleware.signIn(user);
-                    //req.headers['x-access-token'] = tokens.token;
                     res.status(200).json(this.filterResponse(true, 200, 'Login Success!', { tokens: this.tokens, user: { username: user.username, email: user.email } }));
                 });
             });

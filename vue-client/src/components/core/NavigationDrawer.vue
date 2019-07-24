@@ -306,7 +306,8 @@ export default {
 						},
 						{
 							title: 'List Letters',
-							icon: 'list'
+							icon: 'list',
+							link: '/list-letters'
 						},
 						{
 							title: 'Individual Confirmation Letter'

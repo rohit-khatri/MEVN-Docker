@@ -1,11 +1,11 @@
 <template>
 <div>
-  <v-toolbar flat color="white">
-      <v-toolbar-title><h4>Outstanding Candidate Challenges / EDC / CC Appeals</h4></v-toolbar-title>
+  <v-toolbar flat color="white" height="40px">
+      <v-toolbar-title ><h5>Outstanding Candidate Challenges / EDC / CC Appeals</h5></v-toolbar-title>
       <v-spacer></v-spacer>
    </v-toolbar>
   <v-data-table
-    class="table"
+    class="table mb-3"
     :headers="headers"
     :items="users"
     :rows-per-page-items="[10, 25]">
@@ -23,8 +23,8 @@
     </template>
   </v-data-table>
 
-  <v-toolbar flat color="white">
-      <v-toolbar-title><h4>Outstanding Grade Reports</h4></v-toolbar-title>
+  <v-toolbar flat color="white" height="40px" mt-10>
+      <v-toolbar-title><h5>Outstanding Grade Reports</h5></v-toolbar-title>
       <v-spacer></v-spacer>
    </v-toolbar>
    <v-data-table
@@ -112,7 +112,7 @@ export default {
           align: 'left',
           sortable: true
         },
-        
+
       ]
     }
   },
@@ -145,6 +145,6 @@ export default {
     background-color: transparent;
   }
   .column {
-    background-color: #2E7D32 !important; 
+    background-color: #2E7D32 !important;
   }
 </style>

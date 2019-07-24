@@ -1,9 +1,11 @@
 <template>
+  <v-container pt-1>
     <v-layout row wrap>
       <v-flex xs12>
-        <data-table/>
+        <letter-list/>
       </v-flex>
     </v-layout>
+  </v-container>
 </template>
 
 <script>

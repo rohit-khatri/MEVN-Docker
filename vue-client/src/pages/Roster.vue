@@ -16,6 +16,7 @@
                   <v-flex sm3>
                      <v-text-field
                         label="Candidate ID"
+                        outline
                         ></v-text-field>
                   </v-flex>
                   <v-flex sm3>
@@ -42,7 +43,7 @@
                   <v-flex sm3 >
                      <v-select
                         :items="status"
-                        label="Eligibility Status"
+                        label="Letter Grade"
                         outline
                         ></v-select>
                   </v-flex>

@@ -1,6 +1,5 @@
 <template>
-  <v-container fluid grid-list-xl>
-
+<div>
 <v-layout align-center>
    <v-flex>
       <v-window
@@ -15,40 +14,43 @@
             </v-toolbar>
             <v-container>
                <v-layout row wrap>
-                  <v-flex xs12 sm4>
+                  <v-flex xs12 sm3>
                      <v-text-field
                         label="CST Key"
                         outline
                         ></v-text-field>
                   </v-flex>
-                  <v-flex xs12 sm4>
+                  <v-flex xs12 sm3>
                      <v-text-field
                         label="First/Middle Name"
                         outline
                         ></v-text-field>
                   </v-flex>
-                  <v-flex xs12 sm4>
+                  <v-flex xs12 sm3>
                      <v-text-field
                         label="Last Name"
                         outline
                         ></v-text-field>
                   </v-flex>
-                  <v-flex xs12 sm4>
+                  <v-flex xs12 sm3>
                      <v-text-field
                         label="Email Id"
                         outline
                         ></v-text-field>
                   </v-flex>
-                  <v-flex xs12 sm4>
+                  <v-flex xs12 sm3>
                      <v-text-field
                         label="Record Number"
                         outline
                         ></v-text-field>
                   </v-flex>
-                  <v-flex xs12>
-                    <v-btn color="blue darken-2" small>Clear</v-btn>
-                  <v-btn color="blue darken-2" small>Search</v-btn>
-                  </v-flex>
+
+               </v-layout>
+               <v-layout row>
+                   <v-flex>
+                  <v-btn outline color="green" small>Clear</v-btn>
+                  <v-btn outline color="green" small>Search</v-btn>
+                   </v-flex>
                </v-layout>
             </v-container>
          </v-window-item>
@@ -88,7 +90,7 @@
       </v-flex>
       <!-- Statistics Ends -->
     </v-layout>
-  </v-container>
+    </div>
 </template>
 
 <script>

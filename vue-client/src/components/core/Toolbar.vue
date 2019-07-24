@@ -247,8 +247,10 @@ export default {
           title: 'Log Out',
           click: () => {
             const vm = this;
-
+            vm.$store.dispatch('logout')
+            .then(() => {
             vm.$router.push({ name: 'Login' });
+          })
           }
         }
       ],
